@@ -1,0 +1,134 @@
+.slider1 {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative !important;
+}
+
+.slider1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10%;
+  gap: 2rem; */
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+.sliderInfo h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--white);
+  font-family: "Oswald", sans-serif;
+}
+
+.sliderInfo p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--white);
+  /* width: 60%; */
+}
+
+.slidBtn {
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: var(--red);
+  color: var(--white);
+}
+.swiper-pagination{
+  margin-top: 10px;
+}
+
+/* MEDIA QUERY  */
+
+@media (max-width: 1200px) {
+  .sliderInfo {
+    padding-left: 5%;
+  }
+
+  .sliderInfo h1 {
+    font-size: 7rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: "Oswald", sans-serif;
+  }
+
+  .sliderInfo p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--white);
+  }
+}
+
+@media (max-width: 800px) {
+  .sliderInfo {
+    padding-left: 5%;
+  }
+
+  .sliderInfo h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: "Oswald", sans-serif;
+  }
+
+  .sliderInfo p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--white);
+  }
+  .slidBtn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider1 {
+    width: 100%;
+    height: calc(40vh - 100px);
+    position: relative !important;
+    /* background: green !important; */
+  }
+  .sliderInfo {
+    /* padding-left: 2%; */
+  }
+
+  .sliderInfo h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--white);
+    font-family: "Oswald", sans-serif;
+  }
+
+  .sliderInfo p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--white);
+  }
+
+  .slidBtn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider1 {
+    width: 100%;
+    height: calc(60vh - 100px);
+    position: relative !important;
+  }
+}
